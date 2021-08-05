@@ -1,0 +1,8 @@
+<div class="hereMap">
+  <div #map style="width: 100vw; height: 100vh"></div>
+  <div class="actions">
+    <app-autocomplete [options]="options" label="Search zip code 12309" name="search" (onChanged)="search($event)" (onSelect)="optionSelected($event)"></app-autocomplete>
+    <button *ngIf="markers.length > 1" (click)="makeRoute()" class="route">Route</button>
+  </div>
+</div>
+

@@ -1,0 +1,8 @@
+<div class="autocomplete">
+  <input [placeholder]="label" class="input" [(ngModel)]="value" (ngModelChange)="onValueChange()"/>
+  <ul class="options" *ngIf="options.length > 0">
+    <li class="option" *ngFor="let option of options;" (click)="onSelectOption(option)">
+      {{ option.value }}
+    </li>
+  </ul>
+</div>

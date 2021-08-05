@@ -1,0 +1,32 @@
+.autocomplete {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input {
+  box-shadow: 0 5px 10px 0 rgba(0,0,0, 0.2);
+  outline: none;
+  border: 0;
+  border-radius: 12px;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+
+.options {
+  position: absolute;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px 0 ;
+  bottom: 50px;
+  width: max-content;
+  list-style: none;
+}
+
+.option {
+  padding: 10px 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: aliceblue;
+  }
+}
